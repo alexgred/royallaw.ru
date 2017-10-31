@@ -27,23 +27,81 @@ body {
 a {
   color: @link-color;
   font-weight: 600;
+  .transition(color 0.3s);
 
   &:hover {
     color: @link-color-hover;
   }
 }
 
+a,
+input,
+button,
+.btn,
+textarea,
+form {
+  outline: none;
+
+  &:active,
+  &:focus,
+  &:active:focus,
+  &:visited {
+    outline: none;
+    border: 0;
+  }
+}
+
+.btn {
+  padding: 10px @btn-size;
+  height: @btn-size;
+  color: @btn-color;
+  background: @btn-bg;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 0;
+  .transition(background 0.4s);
+
+  &:hover {
+    background: darken(@btn-bg, 10%);
+  }
+} 
+
+input[type="text"],
+input[type="email"],
+textarea {
+  height: @input-size;
+  line-height: @input-size;
+  border-radius: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  background: @input-bg;
+  .shadow(none);
+  .placeholder({font-weight: 500});
+
+  &:focus {
+    border: 0;
+    .shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+  }
+}
+
 
 /* Icons
 ===================== */
-[class^="icon-"] {
+*[class|="icon"] {
   width: @icon-size;
   height: @icon-size;
   position: relative;
+  margin-right: 5px;
+  display: inline-block;
   
   &:before {
     content: '';
     display: block;
+    font-family: @font-icon;
+    font-size: 18px;
     width: @icon-size;
     height: @icon-size;
     line-height: @icon-size;
@@ -54,18 +112,24 @@ a {
     border-radius: 50%;
     background: @icon-bg;
     text-align: center;
+    .transition(all 0.3s);
+  }
+
+  &:hover:before {
+    background: @icon-bg-hover;
+    color: @icon-color-hover;
   }
 }
 
-.icon-fb {
+.icon-fb:before {
   content: '\f09a';
 }
 
-.icon-inst {
+.icon-inst:before {
   content: '\f16d';
 }
 
-.icon-vk {
+.icon-vk:before {
   content: '\f189';
 }
 
@@ -81,7 +145,7 @@ a {
 /* Header
 ========================= */
 .header {
-  margin: @navbar-height 0 40px;
+  margin: @navbar-height 0 0;
   padding: 40px 0;
   background: @header-bg;
 
@@ -100,8 +164,43 @@ a {
 .content {
 
   .block {
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 40px;
+
+    .block-title {
+      padding-left: 7px;
+      border-left: 3px solid @color-title-border;
+      margin: 10px 0 30px;
+
+      * {
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 100;
+        margin: 0;
+      }
+    }
+  }
+
+  .block-areas {
+    background: @block-areas-bg;
+
+    .row {
+      display: flex;
+    }
+
+    .areas-item {
+      border-bottom: 1px solid @block-areas-border;
+      padding-bottom: 20px;
+      height: 100%;
+    }
+
+    .areas-title {
+      color: @block-areas-title;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
   }
 
   .block-contacts {
@@ -118,7 +217,7 @@ a {
       top: 0;
       left: 50%;
       margin-left: -30px;
-      border-top: 20px solid #ffffff;
+      border-top: 20px solid @block-areas-bg;
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
     }
@@ -129,8 +228,8 @@ a {
       .contacts-title {
         font-size: 22px;
         font-weight: 100;
-        padding-bottom: 8px;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
+        margin: 0 0 10px;
         position: relative;
 
         &:before {
@@ -149,6 +248,18 @@ a {
         font-size: 18px;
         font-weight: 100;
 
+        .social-link {
+
+          &:before {
+            background: none;
+            font-size: 24px;
+          }
+
+          &:hover:before {
+            background: none;
+          }
+        }
+
         a {
           color: @block-contacts-link;
           font-weight: 100;
@@ -157,6 +268,23 @@ a {
           &:hover {
             color: @block-contacts-link-hover;
           }
+        }
+      }
+    }
+  }
+
+  .block-form {
+
+    .form-contacts {
+      width: 600px;
+      margin: auto;
+      text-align: center;
+
+      .btn {
+
+        &:focus,
+        &:visited {
+          background: darken(@btn-bg, 10%);
         }
       }
     }
