@@ -15,22 +15,24 @@
   <body>
 
     <nav class="navbar navbar-default navbar-fixed-top sc-hidden" role="navigation">
-      <a class="navbar-brand" href="/"></a>
-      <div class="title-block visible-lg">
-        Royal Law
-      </div>
-      <div class="collapse navbar-collapse navbar-main-menu">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="/">Главная</a>
-          </li>
-          <li>
-            <a href="/article">Статьи</a>
-          </li>
-          <li>
-            <a href="/contacts">Контакты</a>
-          </li>
-        </ul>
+      <div class="container">
+        <a class="navbar-brand" href="/"></a>
+        <div class="title-block visible-lg">
+          Royal Law
+        </div>
+        <div class="collapse navbar-collapse navbar-main-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/">Главная</a>
+            </li>
+            <li>
+              <a href="/article">Статьи</a>
+            </li>
+            <li>
+              <a href="/contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -44,12 +46,29 @@
 
     <div class="content">
 
-      <div class="block-areas">
-        <div class="block-content">
-          <div class="container">
-            <div class="block-title">
-              Areas of Practice
+      <div class="block-about">
+        <div class="container">
+          <div class="block-title">
+            About
+          </div>
+          <div class="block-content">
+            <div class="row">
+              <div class="col-xs-12">
+                  <p>Boyle Frost is a boutique law firm that focuses upon high stakes civil and criminal tax issues, sanctions (“OFAC”) matters, the investigation and resolution of white collar criminal matters, and civil and criminal fraud issues.  We have the knowledge and experience to tackle the most complex financial transactions, whether they involve offshore trusts or complicated international investments.  It doesn’t matter if you have been the victim of fraud or accused of fraud, if you have been accused of sanction violations or need to disclose a foreign account and resolve outstanding issues with the IRS, we can help.</p> 
+                  <p>Tax and tax controversy work are a major practice area of the firm.  We have helped hundreds of clients with audits conducted by the IRS.  We have litigated numerous civil and criminal tax cases brought by the IRS as well as state taxing authorities.  Many of the law firm’s clients have issues related to the Foreign Account Tax Compliance Act (“FATCA”).  Glen Frost has represented hundreds of individuals from across the United States and around the world in the IRS’s Voluntary Offshore Disclosure Program and related programs involving  saving them hundreds of millions of dollars of undisclosed assets.  He is well versed in all aspect of tax controversy practice and civil and criminal tax litigation.</p>
+                  <p>Boyle Frost also represents whistle blowers in cases involving government fraud, tax fraud and evasion. In an effort to combat fraud by government contractors, the government has enacted the False Claims Act.  This statute allows individuals who are aware of fraud against the government to actually file an action on behalf of the government.  Depending upon the recovery, a “relator”, as the person with knowledge of the fraud is called, can receive up to 30% of the amount recovered by the government.  The Internal Revenue Code also allows an individual with knowledge of tax fraud or evasion to recover between 15% and 30% of any amount eventually recovered by the IRS.  There are significant administrative hurtles associated with whistle blower actions.  At Boyle Frost, we have the expertise to successfully represent whistle blowers in any federal or state action.</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-areas">
+        <div class="container">
+          <div class="block-title">
+            Areas of Practice
+          </div>
+          <div class="block-content">
             <div class="row">
               <div class="col-xs-4">
                 <div class="areas-item">
@@ -86,43 +105,113 @@
         </div>
       </div>
 
-      <div class="block-form">
-        <div class="block-content">
-          <form action="" id="contacts" method="POST" role="form" class="form-contacts">
-              <div class="form-group name">
-                <input type="text" class="form-control sc-hidden name" name="name" id="name" placeholder="Имя*" required />
+      <div class="block-contacts">
+        <div class="container">
+          <div class="block-content">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="contacts-items">
+                  <div class="social-title constact-title">
+                    Social networks
+                  </div>
+                  <div class="social-links contacts-text">
+                    <a href="https://vk.com/" class="social-link icon-vk"></a>
+                    <a href="https://instagram.com/" class="social-link icon-inst"></a>
+                    <a href="https://facebook.com/" class="social-link icon-fb"></a>
+                  </div>
+                </div>
               </div>
-              <div class="form-group phone-number">
-                <input type="text" class="form-control sc-hidden phone" name="phone-number" id="phone-number-1" placeholder="Телефон*" required />
+              <div class="col-xs-4">
+                <div class="contacts-items">
+                  <div class="address-title constact-title">
+                    Address
+                  </div>
+                  <div class="address-text contacts-text">
+                    Russia, Krasnodar, Krasnay street, 5
+                  </div>
+                </div>
               </div>
-              <div class="form-group email">
-                <input type="email" name="email" class="form-control sc-hidden email" id="email" placeholder="E-mail" />
+              <div class="col-xs-4">
+                <div class="contacts-items">
+                  <div class="call-title constact-title">
+                      Call us
+                  </div>
+                  <div class="address-text contacts-text">
+                    <a href="tel:+79181335500">+7 (918) 133-55-00</a>
+                  </div>
+                </div>
               </div>
-    
-              <button type="submit" class="btn btn-primary sc-hidden">Отправить</button>
-            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contacts-form" class="block-form">
+        <div class="container">
+          <div class="block-title">
+            Contact us
+          </div>
+          <div class="block-content">
+            <form action="" id="contacts" method="POST" role="form" class="form-contacts">
+                <div class="form-group name">
+                  <input type="text" class="form-control sc-hidden name" name="name" id="name" placeholder="Имя*" required />
+                </div>
+                <div class="form-group phone-number">
+                  <input type="text" class="form-control sc-hidden phone" name="phone-number" id="phone-number-1" placeholder="Телефон*" required />
+                </div>
+                <div class="form-group email">
+                  <input type="email" name="email" class="form-control sc-hidden email" id="email" placeholder="E-mail" />
+                </div>
+      
+                <button type="submit" class="btn btn-primary sc-hidden">Отправить</button>
+              </form>
+          </div>
         </div>
       </div>
 
     </div>
 
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6">
 
-          </div>
-          <div class="col-xs-6">
-            
-            <div class="block-copyright text-right">
-              <div class="block-content">
-                &copy; 2017. Royal Law.
+      <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6">
+  
+              </div>
+              <div class="col-xs-6">
+  
               </div>
             </div>
+          </div>
+        </div>
 
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="block-copyright text-left">
+                  <div class="block-content">
+                    &copy; 2017. Royal Law.
+                  </div>
+                </div>
+            </div>
+            <div class="col-xs-6"> 
+              <div class="block-social text-right">
+                <div class="block-content">
+                  <div class="social-links">
+                    <a href="https://vk.com/" class="social-link icon-vk"></a>
+                    <a href="https://instagram.com/" class="social-link icon-inst"></a>
+                    <a href="https://facebook.com/" class="social-link icon-fb"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+
     </footer>
 
 
