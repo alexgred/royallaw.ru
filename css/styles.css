@@ -4,7 +4,7 @@
 *
 */
 /* Imports
-======================*/
+====================== */
 /*
 *
 * Variables
@@ -12,6 +12,15 @@
 */
 /* Fonts 
 ======================*/
+/* Colors
+======================= */
+/* Variables
+======================== */
+/* link */
+/* Icons */
+/* Navbar */
+/* Header */
+/* Content */
 /* Responsive 
 ======================*/
 /*
@@ -105,7 +114,8 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
-/* Fonts */
+/* Fonts
+======================= */
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2646,5 +2656,134 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* Basic */
+/* Basic
+======================= */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+a {
+  color: rgba(8, 27, 51, 0.8);
+  font-weight: 600;
+}
+a:hover {
+  color: #e54a35;
+}
+/* Icons
+===================== */
+[class^="icon-"] {
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+[class^="icon-"]:before {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #e54a35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: #eeeeee;
+  text-align: center;
+}
+.icon-fb {
+  content: '\f09a';
+}
+.icon-inst {
+  content: '\f16d';
+}
+.icon-vk {
+  content: '\f189';
+}
+/* Navbar
+======================= */
+.navbar {
+  border-bottom: 1px solid #bbbbbb;
+  height: 50px;
+}
+/* Header
+========================= */
+.header {
+  margin: 50px 0 40px;
+  padding: 40px 0;
+  background: rgba(8, 27, 51, 0.8);
+}
+.header .header-content {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+/* Content
+======================== */
+.content .block {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.content .block-contacts {
+  background: #202020 url('../images/contacts.png');
+  background-size: cover;
+  height: 180px;
+  position: relative;
+  color: #ffffff;
+}
+.content .block-contacts:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -30px;
+  border-top: 20px solid #ffffff;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+.content .block-contacts .contacts-item {
+  margin-top: 20px;
+}
+.content .block-contacts .contacts-item .contacts-title {
+  font-size: 22px;
+  font-weight: 100;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.content .block-contacts .contacts-item .contacts-title:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 60px;
+  margin-left: -30px;
+  border-bottom: 3px solid #e54a35;
+}
+.content .block-contacts .contacts-item .contacts-text {
+  font-size: 18px;
+  font-weight: 100;
+}
+.content .block-contacts .contacts-item .contacts-text a {
+  color: #ffffff;
+  font-weight: 100;
+  text-decoration: none;
+}
+.content .block-contacts .contacts-item .contacts-text a:hover {
+  color: #e54a35;
+}
+/* Footer
+========================= */
+.footer {
+  background: #cccccc;
+}
+.footer .footer-top {
+  padding: 30px 0;
+}
+.footer .footer-bottom {
+  padding: 20px 0;
+}
 /*# sourceMappingURL=./styles.css.map */

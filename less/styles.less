@@ -6,14 +6,174 @@
 
 
 /* Imports
-======================*/
+====================== */
 @import '_variables';
 @import '_mixins';
 @import '../js/slick/slick.less'; // Slick
 
 
-/* Fonts */
+/* Fonts
+======================= */
 @import '../fonts/font-awesome/less/font-awesome.less'; // Font Awesome
 @import '_fonts'; // Open Sans
 
-/* Basic */
+/* Basic
+======================= */
+body {
+  font-family: @font-main;
+  font-size: 14px;
+}
+
+a {
+  color: @link-color;
+  font-weight: 600;
+
+  &:hover {
+    color: @link-color-hover;
+  }
+}
+
+
+/* Icons
+===================== */
+[class^="icon-"] {
+  width: @icon-size;
+  height: @icon-size;
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+    width: @icon-size;
+    height: @icon-size;
+    line-height: @icon-size;
+    color: @icon-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: @icon-bg;
+    text-align: center;
+  }
+}
+
+.icon-fb {
+  content: '\f09a';
+}
+
+.icon-inst {
+  content: '\f16d';
+}
+
+.icon-vk {
+  content: '\f189';
+}
+
+
+/* Navbar
+======================= */
+.navbar {
+  border-bottom: 1px solid @navbar-border;
+  height: @navbar-height;
+}
+
+
+/* Header
+========================= */
+.header {
+  margin: @navbar-height 0 40px;
+  padding: 40px 0;
+  background: @header-bg;
+
+  .header-content {
+    color: @header-text;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+}
+
+
+/* Content
+======================== */
+.content {
+
+  .block {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .block-contacts {
+    background: @block-contacts-bg;
+    background-size: cover;
+    height: 180px;
+    position: relative;
+    color: @block-contacts-text;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -30px;
+      border-top: 20px solid #ffffff;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+    }
+
+    .contacts-item {
+      margin-top: 20px;
+
+      .contacts-title {
+        font-size: 22px;
+        font-weight: 100;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 60px;
+          margin-left: -30px;
+          border-bottom: 3px solid @color-title-border;
+        }
+      }
+
+      .contacts-text {
+        font-size: 18px;
+        font-weight: 100;
+
+        a {
+          color: @block-contacts-link;
+          font-weight: 100;
+          text-decoration: none;
+
+          &:hover {
+            color: @block-contacts-link-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Footer
+========================= */
+.footer {
+  background: #cccccc;
+
+  .footer-top {
+    padding: 30px 0;
+  }
+
+  .footer-bottom {
+    padding: 20px 0;
+  }
+}
