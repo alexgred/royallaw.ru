@@ -10,9 +10,78 @@
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
     <link href="/css/colorbox.css" rel="stylesheet">
-    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
   </head>
   <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top sc-hidden" role="navigation">
+      <a class="navbar-brand" href="/"></a>
+      <div class="title-block visible-lg">
+        Royal Law
+      </div>
+      <div class="collapse navbar-collapse navbar-main-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Главная</a>
+          </li>
+          <li>
+            <a href="/article">Статьи</a>
+          </li>
+          <li>
+            <a href="/contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-content text-center">
+          Royal Law
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <div class="block-form">
+        <div class="block-content">
+          <form action="" id="contacts" method="POST" role="form" class="form-contacts">
+              <div class="form-group name">
+                <input type="text" class="form-control sc-hidden name" name="name" id="name" placeholder="Имя*" required />
+              </div>
+              <div class="form-group phone-number">
+                <input type="text" class="form-control sc-hidden phone" name="phone-number" id="phone-number-1" placeholder="Телефон*" required />
+              </div>
+              <div class="form-group email">
+                <input type="email" name="email" class="form-control sc-hidden email" id="email" placeholder="E-mail" />
+              </div>
+    
+              <button type="submit" class="btn btn-primary sc-hidden">Отправить</button>
+            </form>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+
+          </div>
+          <div class="col-xs-6">
+            
+            <div class="block-copyright text-right">
+              <div class="block-content">
+                &copy; 2017. Royal Law.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <script type="text/javascript" src="/js/jquery.min.js"></script>
