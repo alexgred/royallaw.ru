@@ -1,5 +1,5 @@
 *.map
 .htaccess
 .htpasswd
-log/*
+logs/*
 tmp/*
