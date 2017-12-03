@@ -9,4 +9,5 @@ gulp.task('sync', function() {
   });
 
   browserSync.watch('./css/*.css').on('change', browserSync.reload);
+  browserSync.watch('./index.html').on('change', browserSync.reload);
 });
