@@ -1,0 +1,24 @@
+{
+  "name": "santos-site",
+  "version": "1.0.0",
+  "description": "Site for Santos.",
+  "main": "index.html",
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGred/santos-site.git"
+  },
+  "author": "Alex Dolzhenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexGred/santos-site/issues"
+  },
+  "homepage": "https://github.com/AlexGred/santos-site#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "github:gulpjs/gulp#4.0"
+  }
+}
