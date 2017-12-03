@@ -2816,17 +2816,41 @@ textarea:focus {
 /* Navbar
 ======================= */
 .navbar {
-  border-bottom: 1px solid #bbbbbb;
-  height: 50px;
+  border-bottom: 1px solid #dddddd;
+  height: 80px;
+  background-color: #ffffff;
+}
+.navbar.affix {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+}
+.navbar .navbar-main-menu {
+  float: right;
+}
+.navbar .nav {
+  height: 80px;
+  padding: 20px 0;
+}
+.navbar .nav a {
+  font-weight: 100;
+  padding: 0 15px;
+  line-height: 40px;
+}
+.logo-block {
+  float: left;
+  padding: 10px 0;
+}
+.logo-block a {
+  height: 60px;
+  display: inline-block;
 }
 /* Header
 ========================= */
 .header {
-  margin: 50px 0 0;
+  margin: 80px 0 0;
   padding: 40px 0;
   background: rgba(8, 27, 51, 0.8);
 }
-.header .header-content {
+.header .header-content .page-title {
   color: #ffffff;
   font-size: 30px;
   line-height: 1;
@@ -2856,7 +2880,7 @@ textarea:focus {
   display: flex;
 }
 .content .block-areas .areas-item {
-  border-bottom: 1px solid #bbbbbb;
+  border-bottom: 1px solid #dddddd;
   padding-bottom: 20px;
   height: 100%;
 }

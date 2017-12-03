@@ -139,6 +139,36 @@ textarea {
 .navbar {
   border-bottom: 1px solid @navbar-border;
   height: @navbar-height;
+  background-color: @navbar-bg;
+  
+  &.affix {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+  }
+
+  .navbar-main-menu {
+    float: right;
+  }
+
+  .nav {
+    height: @navbar-height;
+    padding: 20px 0;
+
+    a {
+      font-weight: 100;
+      padding: 0 15px;
+      line-height: @navbar-height - 40px;
+    }
+  }
+}
+
+.logo-block {
+  float: left;
+  padding: 10px 0;
+
+  a {
+    height: @navbar-height - 20px;
+    display: inline-block;
+  }
 }
 
 
@@ -150,11 +180,14 @@ textarea {
   background: @header-bg;
 
   .header-content {
-    color: @header-text;
-    font-size: 30px;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: 100;
+
+    .page-title {
+      color: @header-text;
+      font-size: 30px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
   }
 }
 
