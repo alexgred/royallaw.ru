@@ -27,7 +27,11 @@ gulp.task('dev:styles', function() {
 gulp.task('sync', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: './',
+      routes: {
+        '/article': './article.html',
+        '/contacts': './contacts.html'
+      }
     }
   });
 
