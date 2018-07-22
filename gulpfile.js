@@ -29,7 +29,7 @@ gulp.task('sync', function() {
     server: {
       baseDir: './',
       routes: {
-        '/article': './article.html',
+        '/price': './price.html',
         '/contacts': './contacts.html'
       }
     }

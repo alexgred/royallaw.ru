@@ -9,7 +9,6 @@
 ====================== */
 @import '_variables';
 @import '_mixins';
-@import '../js/slick/slick.less'; // Slick
 
 
 /* Fonts
@@ -22,6 +21,7 @@
 body {
   font-family: @font-main;
   font-size: 14px;
+  color: @font-color;
 }
 
 a {
@@ -67,6 +67,12 @@ form {
     background: darken(@btn-bg, 10%);
   }
 } 
+
+.description {
+  font-size: 13px;
+  color: lighten(@font-color, 30%);
+  margin-top: 20px;
+}
 
 input[type="text"],
 input[type="email"],
@@ -307,6 +313,14 @@ textarea {
   }
 
   .block-form {
+
+    .block-description {
+      width: 550px;
+      margin: auto;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 100;
+    }
 
     .form-contacts {
       width: 600px;
