@@ -2917,6 +2917,34 @@ textarea:focus {
 .content .block-form .form-contacts .btn:visited {
   background: #cd301a;
 }
+/* Scroll to top
+======================== */
+.scroll-to-top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.scroll-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.scroll-to-top:before {
+  display: block;
+  content: '\f106';
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 50%;
+  line-height: 46px;
+  font-size: 40px;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+}
 /* Footer
 ========================= */
 .footer {

@@ -109,4 +109,35 @@ $(document).ready(function() {
     }
   });
 
+  // anchor
+  $('ul.nav a.anchor').on('click', function (event) {
+    event.preventDefault();
+    
+    var id  = $(this).attr('href');
+    var top = $(id).offset().top - 80;
+
+		$('body, html').animate({
+      scrollTop: top
+    }, 600);
+  });
+
+
+  //Scroll to top
+  var windowBottom = $('body').height() - $(window).height() - 100;
+
+  $(window).scroll(function () {
+
+    if ($(window).scrollTop() >= windowBottom) {
+      $('.scroll-to-top').fadeIn(300);
+    }
+    else {
+      $('.scroll-to-top').fadeOut(300);
+    }
+  });
+
+  $('.scroll-to-top').click(function () {
+    $('body, html').animate({
+      scrollTop: 0
+    }, 400);
+  });
 });
