@@ -2792,6 +2792,14 @@ textarea:focus {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 100;
+  margin: 15px 0;
+}
+.header .header-content .page-description {
+  color: #fff;
+  font-size: 20px;
+  width: 330px;
+  margin: 2px auto;
+  font-weight: 100;
 }
 /* Frontpage title
 ======================== */
@@ -2808,6 +2816,12 @@ textarea:focus {
   font-weight: 600;
   color: #4f4f4f;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.site-name-block .site-name h1 {
+  font-size: 100%;
+  margin: 0;
+  line-height: 80px;
+  font-weight: 600;
 }
 /* Content
 ======================== */
@@ -2956,4 +2970,8 @@ textarea:focus {
 .footer .footer-bottom {
   padding: 20px 0;
 }
+.footer .footer-bottom .developer a {
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=styles.css.map */
