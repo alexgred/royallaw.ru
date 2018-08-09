@@ -2699,8 +2699,13 @@ textarea:focus {
   width: 36px;
   height: 36px;
   position: relative;
-  margin-right: 5px;
+  margin-right: 4px;
   display: inline-block;
+}
+@media (min-width: 768px) {
+  *[class|="icon"] {
+    margin-right: 5px;
+  }
 }
 *[class|="icon"]:before {
   content: '';
@@ -2769,7 +2774,12 @@ textarea:focus {
 .logo-block {
   float: left;
   padding: 10px 0;
-  margin-left: 20px;
+  margin-left: -35px;
+}
+@media (min-width: 768px) {
+  .logo-block {
+    margin-left: 20px;
+  }
 }
 .logo-block a {
   height: 60px;
@@ -2777,7 +2787,12 @@ textarea:focus {
 }
 .logo-block img {
   transition: all 0.15s;
-  height: 90px;
+  height: 60px;
+}
+@media (min-width: 768px) {
+  .logo-block img {
+    height: 90px;
+  }
 }
 /* Header
 ========================= */
@@ -2797,9 +2812,14 @@ textarea:focus {
 .header .header-content .page-description {
   color: #fff;
   font-size: 20px;
-  width: 330px;
+  width: 90%;
   margin: 2px auto;
   font-weight: 100;
+}
+@media (min-width: 768px) {
+  .header .header-content .page-description {
+    width: 330px;
+  }
 }
 /* Frontpage title
 ======================== */
@@ -2816,6 +2836,7 @@ textarea:focus {
   font-weight: 600;
   color: #4f4f4f;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
 }
 .site-name-block .site-name h1 {
   font-size: 100%;
@@ -2826,7 +2847,12 @@ textarea:focus {
 /* Content
 ======================== */
 .content .block {
-  padding: 40px;
+  padding: 40px 0;
+}
+@media (min-width: 1200px) {
+  .content .block {
+    padding: 40px;
+  }
 }
 .content .block .block-title {
   padding-left: 7px;
@@ -2842,13 +2868,27 @@ textarea:focus {
 .content .block-areas {
   background: #f1f1f1;
 }
-.content .block-areas .row {
-  display: flex;
+@media (min-width: 768px) {
+  .content .block-areas .row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .content .block-areas .row {
+    flex-flow: row nowrap;
+  }
 }
 .content .block-areas .areas-item {
   border-bottom: 1px solid #dddddd;
   padding-bottom: 20px;
   height: 100%;
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .content .block-areas .areas-item {
+    margin-bottom: 0;
+  }
 }
 .content .block-areas .areas-title {
   color: #e54a35;
@@ -2861,9 +2901,14 @@ textarea:focus {
 .content .block-contacts {
   background: #202020 url('../images/contacts.png');
   background-size: cover;
-  height: 180px;
+  height: 220px;
   position: relative;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .content .block-contacts {
+    height: 180px;
+  }
 }
 .content .block-contacts:before {
   content: '';
@@ -2916,16 +2961,26 @@ textarea:focus {
   color: #e54a35;
 }
 .content .block-form .block-description {
-  width: 550px;
+  width: 90%;
   margin: auto;
   text-align: center;
   font-size: 16px;
   font-weight: 100;
 }
+@media (min-width: 768px) {
+  .content .block-form .block-description {
+    width: 550px;
+  }
+}
 .content .block-form .form-contacts {
-  width: 600px;
+  width: 100%;
   margin: auto;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .content .block-form .form-contacts {
+    width: 600px;
+  }
 }
 .content .block-form .form-contacts .btn:focus,
 .content .block-form .form-contacts .btn:visited {
@@ -2944,6 +2999,7 @@ textarea:focus {
   right: 30px;
   cursor: pointer;
   transition: background-color 0.3s;
+  z-index: 1000;
 }
 .scroll-to-top:hover {
   background-color: rgba(0, 0, 0, 0.3);
@@ -2973,5 +3029,4 @@ textarea:focus {
 .footer .footer-bottom .developer a {
   font-weight: 500;
 }
-
 /*# sourceMappingURL=styles.css.map */

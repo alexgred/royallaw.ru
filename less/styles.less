@@ -100,8 +100,12 @@ textarea {
   width: @icon-size;
   height: @icon-size;
   position: relative;
-  margin-right: 5px;
+  margin-right: 4px;
   display: inline-block;
+
+  @media @s {
+    margin-right: 5px;
+  }
   
   &:before {
     content: '';
@@ -184,7 +188,11 @@ textarea {
 .logo-block {
   float: left;
   padding: 10px 0;
-  margin-left: 20px;
+  margin-left: -35px;
+
+  @media @s {
+    margin-left: 20px;
+  }
 
   a {
     height: @navbar-height - 20px;
@@ -193,7 +201,11 @@ textarea {
 
   img {
     transition: all 0.15s;
-    height: 90px;
+    height: 60px;
+
+    @media @s {
+      height: 90px;
+    }
   }
 }
 
@@ -219,9 +231,13 @@ textarea {
     .page-description {
       color: #fff;
       font-size: 20px;
-      width: 330px;
+      width: 90%;
       margin: 2px auto;
       font-weight: 100;
+
+      @media @s {
+        width: 330px;
+      }
     }
   }
 }
@@ -242,6 +258,7 @@ textarea {
     font-weight: 600;
     color: @color-site-name;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
 
     h1 {
       font-size: 100%;
@@ -258,7 +275,11 @@ textarea {
 .content {
 
   .block {
-    padding: 40px;
+    padding: 40px 0;
+    
+    @media @l {
+      padding: 40px;
+    }
 
     .block-title {
       padding-left: 7px;
@@ -278,13 +299,26 @@ textarea {
     background: @block-areas-bg;
 
     .row {
-      display: flex;
+      
+      @media @s {
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      @media @l {
+        flex-flow: row nowrap;
+      }
     }
 
     .areas-item {
       border-bottom: 1px solid @block-areas-border;
       padding-bottom: 20px;
       height: 100%;
+      margin-bottom: 30px;
+
+      @media @l {
+        margin-bottom: 0;
+      }
     }
 
     .areas-title {
@@ -300,9 +334,13 @@ textarea {
   .block-contacts {
     background: @block-contacts-bg;
     background-size: cover;
-    height: 180px;
+    height: 220px;
     position: relative;
     color: @block-contacts-text;
+    
+    @media @s {
+      height: 180px;
+    }
 
     &:before {
       content: '';
@@ -370,17 +408,25 @@ textarea {
   .block-form {
 
     .block-description {
-      width: 550px;
+      width: 90%;
       margin: auto;
       text-align: center;
       font-size: 16px;
       font-weight: 100;
+
+      @media @s {
+        width: 550px;
+      }
     }
 
     .form-contacts {
-      width: 600px;
+      width: 100%;
       margin: auto;
       text-align: center;
+
+      @media @s {
+        width: 600px;
+      }
 
       .btn {
 
@@ -407,6 +453,7 @@ textarea {
   right: 30px;
   cursor: pointer;
   transition: background-color 0.3s;
+  z-index: 1000;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.3);
