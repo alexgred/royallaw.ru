@@ -37,6 +37,7 @@
  */
 /* FONT PATH
  * -------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600');
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -2571,6 +2572,7 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* Crimson Text latin */
 /* Basic
 ======================= */
 body {
@@ -2743,25 +2745,39 @@ textarea:focus {
 .navbar.affix {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
 }
+.navbar.affix .logo-block img {
+  height: 60px;
+}
 .navbar .navbar-main-menu {
   float: right;
 }
 .navbar .nav {
   height: 80px;
-  padding: 20px 0;
+  padding: 0;
 }
 .navbar .nav a {
   font-weight: 100;
   padding: 0 15px;
-  line-height: 40px;
+  line-height: 80px;
+  height: 80px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+.navbar .nav a.active {
+  border-bottom: 3px solid #e54a35;
 }
 .logo-block {
   float: left;
   padding: 10px 0;
+  margin-left: 20px;
 }
 .logo-block a {
   height: 60px;
   display: inline-block;
+}
+.logo-block img {
+  transition: all 0.15s;
+  height: 90px;
 }
 /* Header
 ========================= */
@@ -2776,6 +2792,22 @@ textarea:focus {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 100;
+}
+/* Frontpage title
+======================== */
+.site-name-block {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.site-name-block .site-name {
+  font-family: 'Crimson Text';
+  font-size: 40px;
+  line-height: 80px;
+  font-weight: 600;
+  color: #4f4f4f;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 /* Content
 ======================== */
