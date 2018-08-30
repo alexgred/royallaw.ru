@@ -16,11 +16,16 @@
     "url": "https://github.com/alexgred/santos-site/issues"
   },
   "homepage": "https://github.com/alexgred/santos-site#readme",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^4.0.0",
+    "gulp-clean-css": "^3.10.0",
     "gulp-less": "^3.3.2",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.1",
+    "pump": "^3.0.0"
   }
 }
