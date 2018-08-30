@@ -10,6 +10,12 @@ const uglify = require('gulp-uglify');
 const pump = require('pump');
 const concat = require('gulp-concat');
 
+const jsfiles = [
+  "./src/js/jquery.min.js",
+  "./src/bootstrap/js/bootstrap.min.js",
+  "./src/js/*.js"
+];
+
 
 /* Dev 
 ================== */
@@ -22,11 +28,13 @@ gulp.task('dev:styles', function() {
     .pipe(less())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream({match: '**/*.css'})); 
 });
 
 /* js */
 gulp.task('dev:js', function(cb) {
-  return gulp.src('./src/js/*.js')
+  return gulp.src(jsfiles)
+    .pipe(concat('script.js'))
     .pipe(gulp.dest('./js'));
 });
 
@@ -44,11 +52,7 @@ gulp.task('prod:styles', function() {
 });
 
 /* js */
-let jsfiles = [
-  "./src/js/jquery.min.js",
-  "./src/bootstrap/js/bootstrap.min.js",
-  "./src/js/*.js"
-];
+
 
 gulp.task('prod:js', function(cb) {
   pump([
@@ -133,9 +137,9 @@ gulp.task('sync', function() {
     }
   });
 
-  browserSync.watch('./src/css/*.css').on('change', browserSync.reload);
-  browserSync.watch('./src/js/*.js').on('change', browserSync.reload);
-  browserSync.watch('./src/*.html').on('change', browserSync.reload);
+  browserSync.watch('./css/*.css').on('change', browserSync.reload);
+  browserSync.watch('./js/*.js').on('change', browserSync.reload);
+  browserSync.watch('./*.html').on('change', browserSync.reload);
 });
 
 

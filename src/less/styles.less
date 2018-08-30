@@ -76,10 +76,24 @@ form {
 }
 
 input[type="text"],
-input[type="email"],
-textarea {
+input[type="email"] {
   height: @input-size;
   line-height: @input-size;
+  border-radius: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  background: @input-bg;
+  .shadow(none);
+  .placeholder({font-weight: 500});
+
+  &:focus {
+    border: 0;
+    .shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+  }
+}
+
+textarea.form-control {
   border-radius: 0;
   border: 0;
   font-size: 16px;
@@ -434,6 +448,41 @@ textarea {
         &:focus,
         &:visited {
           background: darken(@btn-bg, 10%);
+        }
+      }
+    }
+  }
+}
+
+
+/* Block contact info
+========================== */
+.block-contact-info {
+  background-color: @block-areas-bg;
+  width: 100%;
+  border-left: 3px solid @block-areas-border;
+  padding: 30px 20px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .contact-info-item {
+    margin-bottom: 10px;
+
+    .info {
+      font-size: 16px;
+      font-weight: 600;
+      color: @color-second;
+      
+      a {
+        font-weight: 600;
+        text-decoration: none; 
+        color: @color-second;
+        
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
