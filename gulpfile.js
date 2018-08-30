@@ -8,6 +8,7 @@ const del = require('del');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
+const concat = require('gulp-concat');
 
 
 /* Dev 
@@ -43,9 +44,16 @@ gulp.task('prod:styles', function() {
 });
 
 /* js */
+let jsfiles = [
+  "./src/js/jquery.min.js",
+  "./src/bootstrap/js/bootstrap.min.js",
+  "./src/js/*.js"
+];
+
 gulp.task('prod:js', function(cb) {
   pump([
-    gulp.src('./src/js/*.js'),
+    gulp.src(jsfiles),
+    concat('script.js'),
     uglify(),
     gulp.dest('./js')
   ],
