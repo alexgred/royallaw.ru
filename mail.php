@@ -7,7 +7,7 @@
   $message_info .= "\r\nНомер телефона: " . $phone;
   $message_info .= "\r\nПочта: " . $email;
 
-  mail('alexgred.dev@gmail.com', 'Заявка на связь', $message_info, "From: Royal Law info <info@royallaw.ru>\r\n" . "X-Mailer: PHP/" . phpversion());
+  mail('alexgred.dev@gmail.com', 'Заявка на связь', $message_info, "From: Royal Law info <info@royallaw.ru>\r\n" . "X-Mailer: PHP/" . phpversion(), '-finfo@royallaw.ru');
 
 echo print_r($form);
 ?>
