@@ -140,4 +140,33 @@ $(document).ready(function() {
       scrollTop: 0
     }, 400);
   });
+
+
+  // Mail
+  $('.form-contacts').submit(function(event) {
+    var name = $(this).find('input.name').val();
+    var phone = $(this).find('input.phone').val();
+    var email = $(this).find('input.email').val();
+    var form = $(this).attr('id');
+
+    $.ajax({
+      type: "POST",
+      url: "/mail.php",
+      data: { name: name, phone: phone, email: email, form: form },
+      success: function(data){
+        $('.modal-body .close').click();
+        $('.region-alert').append('<div style="opacity: 0;" class="alert alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>В течении дня мы вам перезвоним.</div>');
+
+        opacityAlert = function() {
+          $('.region-alert .alert').css('opacity', '1');
+        }
+
+        setTimeout(opacityAlert, 300);
+      }
+    });
+
+
+    return false;
+  });
+
 });

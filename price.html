@@ -12,7 +12,7 @@
     <link href="/css/colorbox.css" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="price-page">
 
     <nav class="navbar navbar-default navbar-fixed-top sc-hidden" role="navigation">
       <div class="container">
@@ -53,7 +53,7 @@
 
     <div class="content">
 
-      <div class="block-price-list">
+      <div class="block-price-list block">
         <div class="container">
           <h3>Стоимость услуг:</h3>
           <ul>
@@ -75,6 +75,45 @@
         </div>
       </div>
 
+      <div id="block-contacts" class="block-contacts block">
+        <div class="container">
+          <div class="block-content">
+            <div class="row">
+              <div class="hidden-xs col-xs-6 col-sm-4">
+                <div class="contacts-item text-center">
+                  <h4 class="email-title contacts-title">
+                    E-mail
+                  </h4>
+                  <div class="email-content contacts-text">
+                    <a href="mailto:a.vlasenko@royallaw.ru">a.vlasenko@royallaw.ru</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4">
+                <div class="contacts-item text-center">
+                  <h4 class="address-title contacts-title">
+                    Адрес
+                  </h4>
+                  <div class="address-text contacts-text">
+                    г. Краснодар, Краснодарский край, РФ
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4">
+                <div class="contacts-item text-center">
+                  <h4 class="call-title contacts-title">
+                    Телефон
+                  </h4>
+                  <div class="address-text contacts-text">
+                    <a href="tel:+79181335500">+7 (918) 133-55-00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="contacts-form" class="block-form block">
         <div class="container">
           <div class="block-title">
@@ -89,7 +128,7 @@
                 <input type="text" class="form-control sc-hidden name" name="name" id="name" placeholder="Имя*" required />
               </div>
               <div class="form-group phone-number">
-                <input type="text" class="form-control sc-hidden phone" name="phone-number" id="phone-number-1" placeholder="Телефон*" required />
+                <input type="text" class="form-control sc-hidden phone" name="phone-number" id="phone" placeholder="Телефон*" required />
               </div>
               <div class="form-group email">
                 <input type="email" name="email" class="form-control sc-hidden email" id="email" placeholder="E-mail" />
@@ -101,6 +140,8 @@
         </div>
       </div>
     </div>
+
+    <div class="scroll-to-top"></div>
 
     <footer class="footer">
 

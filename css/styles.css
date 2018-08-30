@@ -37,7 +37,6 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600');
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -94,9 +93,9 @@
   left: -1.85714286em;
 }
 .fa-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
-  border-radius: .1em;
+  border-radius: 0.1em;
 }
 .fa-pull-left {
   float: left;
@@ -105,10 +104,10 @@
   float: right;
 }
 .fa.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 .fa.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 /* Deprecated as of 4.4.0 */
 .pull-right {
@@ -118,10 +117,10 @@
   float: left;
 }
 .fa.pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 .fa.pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -2573,6 +2572,18 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 /* Crimson Text latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
+}
 /* Basic
 ======================= */
 body {
@@ -3028,5 +3039,9 @@ textarea:focus {
 }
 .footer .footer-bottom .developer a {
   font-weight: 500;
+}
+/* Page price */
+.price-page .block-contacts:before {
+  border-top-color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */
