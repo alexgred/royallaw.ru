@@ -30,6 +30,30 @@ gulp.task('dev:js', function(cb) {
 });
 
 
+/* Prod
+=========================== */
+
+/* Style */
+gulp.task('prod:styles', function() {
+
+  return gulp.src('./src/less/styles.less')
+    .pipe(less())
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('./css'))
+});
+
+/* js */
+gulp.task('prod:js', function(cb) {
+  pump([
+    gulp.src('./src/js/*.js'),
+    uglify(),
+    gulp.dest('./js')
+  ],
+  cb
+  );
+});
+
+
 /* Default
 ======================== */
 
@@ -81,6 +105,12 @@ gulp.task('dev:build', gulp.series(
   gulp.parallel('dev:styles', 'dev:js', 'default:html', 'default:fonts', 'default:images', 'default:bootstrap', 'default:php')
 ));
 
+/* Prod build*/
+gulp.task('prod:build', gulp.series(
+  'clean',
+  gulp.parallel('prod:styles', 'prod:js', 'default:html', 'default:fonts', 'default:images', 'default:bootstrap', 'default:php')
+));
+
 
 /* Sync
 ===========================*/
@@ -115,4 +145,9 @@ gulp.task('watch', function() {
 gulp.task('dev', gulp.series(
   'dev:build',
   gulp.parallel('watch', 'sync')
+));
+
+/* Deploy */
+gulp.task('deploy', gulp.series(
+  'prod:build'
 ));
