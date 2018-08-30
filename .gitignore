@@ -6,8 +6,8 @@ node_modules/*
 package-lock.json
 css/*
 js/*
-./*.html
+/*.html
 fonts/*
 images/*
 bootstrap/*
-./*.php
+/*.php
