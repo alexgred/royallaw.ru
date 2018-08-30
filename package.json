@@ -16,13 +16,12 @@
     "url": "https://github.com/alexgred/santos-site/issues"
   },
   "homepage": "https://github.com/alexgred/santos-site#readme",
-  "dependencies": {
-    "del": "^3.0.0"
-  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.10.0",
+    "gulp-cli": "^2.0.1",
     "gulp-less": "^3.3.2",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.1",
