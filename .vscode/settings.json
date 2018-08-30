@@ -1,5 +1,5 @@
 {
-  "less.compile": {
+  "easycompile.less": {
     "out": false
   }
 }

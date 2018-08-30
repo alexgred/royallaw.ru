@@ -4,3 +4,10 @@ logs/*
 tmp/*
 node_modules/*
 package-lock.json
+css/*
+js/*
+./*.html
+fonts/*
+images/*
+bootstrap/*
+./*.php

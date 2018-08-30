@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/alexgred/santos-site#readme",
   "dependencies": {
-    "gulp-concat": "^2.6.1"
+    "del": "^3.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
