@@ -155,7 +155,7 @@ $(document).ready(function() {
       url: "/mail.php",
       data: { name: name, phone: phone, email: email, form: form, question: question },
       success: function(data){
-        $('.region-alert').append('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><span class="glyphicon glyphicon-ok"></span>Спасибо! Ваша заявка принята.</div>');
+        $('body').append('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><span class="glyphicon glyphicon-ok"></span>Спасибо! Ваша заявка принята.</div>');
       }
     });
 
