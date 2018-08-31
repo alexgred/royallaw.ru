@@ -155,14 +155,7 @@ $(document).ready(function() {
       url: "/mail.php",
       data: { name: name, phone: phone, email: email, form: form, question: question },
       success: function(data){
-        $('.modal-body .close').click();
-        $('.region-alert').append('<div style="opacity: 0;" class="alert alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>В течении дня мы вам перезвоним.</div>');
-
-        opacityAlert = function() {
-          $('.region-alert .alert').css('opacity', '1');
-        }
-
-        setTimeout(opacityAlert, 300);
+        $('.region-alert').append('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><span class="glyphicon glyphicon-ok"></span>Спасибо! Ваша заявка принята.</div>');
       }
     });
 
