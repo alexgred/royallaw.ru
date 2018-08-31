@@ -109,6 +109,9 @@ $(document).ready(function() {
     }
   });
 
+  // Phone
+  $('#phone').mask('+7 (999) 999-99-99');
+
   // anchor
   $('ul.nav a.anchor').on('click', function (event) {
     event.preventDefault();
