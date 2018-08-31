@@ -145,6 +145,43 @@ $(document).ready(function() {
   });
 
 
+  // Animation
+  $('.navbar').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 100    
+  });
+
+  $('.header').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 100    
+  });
+  
+  $('.block-about').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 100    
+  });
+
+  $('.block-areas').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 100    
+  });
+
+  $('.block-contacts').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 100    
+  });
+
+  $('.block-form').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 100    
+  });
+
+  $('.footer').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 0    
+  });
+
+
   // Mail
   $('.form-contacts').submit(function(event) {
     var name = $(this).find('input.name').val();
