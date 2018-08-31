@@ -181,6 +181,10 @@ $(document).ready(function() {
     offset: 0    
   });
 
+  $('.block-price-list').viewportChecker({
+    classToAdd: 'sc-visible animated fadeIn',
+    offset: 0    
+  });
 
   // Mail
   $('.form-contacts').submit(function(event) {
