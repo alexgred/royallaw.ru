@@ -3,32 +3,23 @@
 
     <Navigation :siteName="$static.metadata.siteName" />
 
-    <header class="header sc-hidden">
-      <div class="container">
-        
-      </div>
-    </header>
+    <Header />
 
     <div class="content">
-
+      <slot />
     </div>
 
-    <div class="scroll-to-top"></div>
+    <ScrollToTop />
 
-    <footer class="footer sc-hidden">
-
-    </footer>
+    <Footer />
   </div>
 </template>
 
-<script>
-import Navigation from '@/components/Navigation';
-
-export default {
-  components: {
-    Navigation,
-  },
-}
+<script setup>
+import Navigation from '~/components/Navigation';
+import Footer from '~/components/Footer';
+import Header from '~/components/Header';
+import ScrollToTop from '~/components/ScrollToTop';
 </script>
 
 <static-query>
@@ -39,5 +30,16 @@ query {
 }
 </static-query>
 
-<style>
+<style lang="scss">
+/* .sc-hidden {
+  opacity: 0;
+}
+
+.sc-visible {
+  opacity: 1;
+}
+
+.animated {
+  animation-duration: 0.6s;
+} */
 </style>
