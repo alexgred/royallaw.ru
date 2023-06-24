@@ -1,5 +1,8 @@
 {
   "easycompile.less": {
     "out": false
+  },
+  "easycompile.sass": {
+    "out": false
   }
 }
