@@ -111,141 +111,24 @@ textarea.form-control {
 
 /* Icons
 ===================== */
-*[class|="icon"] {
-  width: @icon-size;
-  height: @icon-size;
-  position: relative;
-  margin-right: 4px;
-  display: inline-block;
 
-  @media @s {
-    margin-right: 5px;
-  }
-  
-  &:before {
-    content: '';
-    display: block;
-    font-family: @font-icon;
-    font-size: 18px;
-    width: @icon-size;
-    height: @icon-size;
-    line-height: @icon-size;
-    color: @icon-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    background: @icon-bg;
-    text-align: center;
-    .transition(all 0.3s);
-  }
-
-  &:hover:before {
-    background: @icon-bg-hover;
-    color: @icon-color-hover;
-  }
-}
-
-.icon-fb:before {
-  content: '\f09a';
-}
-
-.icon-inst:before {
-  content: '\f16d';
-}
-
-.icon-vk:before {
-  content: '\f189';
-}
 
 
 /* Navbar
 ======================= */
 
 
-.logo-block {
-  float: left;
-  padding: 10px 0;
-  margin-left: -35px;
 
-  @media @s {
-    margin-left: 20px;
-  }
-
-  a {
-    height: @navbar-height - 20px;
-    display: inline-block;
-  }
-
-  img {
-    transition: all 0.15s;
-    height: 60px;
-
-    @media @s {
-      height: 90px;
-    }
-  }
-}
 
 
 /* Header
 ========================= */
-.header {
-  margin: @navbar-height 0 0;
-  padding: 28px 0;
-  background: @header-bg;
 
-  .header-content {
-
-    .page-title {
-      color: @header-text;
-      font-size: 30px;
-      line-height: 1;
-      text-transform: uppercase;
-      font-weight: 100;
-      margin: 15px 0;
-    }
-
-    .page-description {
-      color: #fff;
-      font-size: 28px;
-      width: 90%;
-      margin: 2px auto;
-      font-weight: 500;
-
-      @media @s {
-        width: 350px;
-      }
-    }
-  }
-}
 
 
 /* Frontpage title
 ======================== */
-.site-name-block {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
 
-  .site-name {
-    font-family: 'Crimson Text';
-    font-size: 40px;
-    line-height: 80px;
-    font-weight: 600;
-    color: @color-site-name;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
-
-    h1 {
-      font-size: 100%;
-      margin: 0;
-      line-height: 80px;
-      font-weight: 600;
-    }
-  }
-}
 
 /* Alert bootstrap
 ===================== */
@@ -486,58 +369,11 @@ textarea.form-control {
 
 /* Scroll to top
 ======================== */
-.scroll-to-top {
-  display: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  z-index: 1000;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  &:before {
-    display: block;
-    content: '\f106';
-    font-family: @font-icon;
-    position: absolute;
-    left: 50%;
-    line-height: 46px;
-    font-size: 40px;
-    transform: translateX(-50%);
-    color: rgba(255, 255, 255, 0.7);
-  }
-}
 
 
 /* Footer
 ========================= */
-.footer {
-  background: #cccccc;
-  padding: 20px 0 10px;
 
-  .footer-top {
-    padding: 30px 0;
-  }
-
-  .footer-bottom {
-    padding: 20px 0;
-
-    .developer {
-
-      a {
-        font-weight: 500;
-      }
-    }
-  }
-}
 
 
 /* Page price */
@@ -554,15 +390,4 @@ textarea.form-control {
 
 /* Animation
 ================= */
-.sc-hidden {
-  opacity: 0;
-}
 
-.sc-visible {
-  opacity: 1;
-}
-
-.animated {
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-}

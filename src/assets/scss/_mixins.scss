@@ -6,65 +6,7 @@
 
 
 // Size
-.size(@width: auto, @height: auto) {
-  width: @width;
-  height: @height;
-}
-// Transition
-.transition(@property: all 1s) {
-  -webkit-transition: @property;
-  -moz-transition: @property;
-  -o-transition: @property;
-  transition: @property;
-}
-
-// Box shadow
-.shadow(@shadow) {
-  -webkit-box-shadow: @shadow;
-  -moz-box-shadow: @shadow;
-  -o-box-shadow: @shadow;
-  box-shadow: @shadow;
-}
-// Transform
-.transform(@property) {
-  -moz-transform: @property;
-  -ms-transform: @property;
-  -webkit-transform: @property;
-  -o-transform: @property;
-  transform: @property;
-}
-// Triple gradient
-.tripleGradient(@startColor: transparent, @midColor: #cccccc, @endColor: transparent) {
-  background: -webkit-linear-gradient(left, @startColor, @midColor, @endColor);
-  background: -moz-linear-gradient(left, @startColor, @midColor, @endColor);
-  background: -ms-linear-gradient(left, @startColor, @midColor, @endColor);
-  background: -o-linear-gradient(left, @startColor, @midColor, @endColor);
-  background: linear-gradient(to left, @startColor, @midColor, @endColor);
-}
-// Blur
-.blur(@radius: 5px) {
-  -webkit-filter: blur(@radius);
-  -moz-filter: blur(@radius);
-  -o-filter: blur(@radius);
-  -ms-filter: blur(@radius);
-  filter: blur(@radius);
-}
-//Placeholder
-.placeholder(@rules){
-  
-  &::-webkit-input-placeholder{
-     @rules();
-  }
-
-  &:-moz-placeholder{
-     @rules();
-  }
-
-  &::-moz-placeholder{
-     @rules();
-  }
-
-  &:-ms-input-placeholder{
-     @rules();
-  }
+@mixin size($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
 }
