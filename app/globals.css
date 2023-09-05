@@ -31,7 +31,7 @@
   --header-bg: var(--color-primary);
   --header-text: #ffffff;
 
-  --block-contacts-bg: #202020 url('../images/contacts.png');
+  --block-contacts-bg: #202020 url('../assets/images/contacts.png');
   --block-contacts-text: #ffffff;
   --block-contacts-link: var(--block-contacts-text);
   --block-contacts-link-hover: var(--link-color-hover);
