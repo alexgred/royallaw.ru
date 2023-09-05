@@ -1,10 +1,13 @@
 {
   "name": "santos-site",
-  "version": "1.0.0",
+  "version": "2.0.0-dev",
   "description": "Site for Santos.",
-  "main": "index.html",
+  "private": true,
   "scripts": {
-    "gulp": "./node_modules/.bin/gulp"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -16,7 +19,15 @@
     "url": "https://github.com/alexgred/santos-site/issues"
   },
   "homepage": "https://github.com/alexgred/santos-site#readme",
-  "devDependencies": {
-
+  "dependencies": {
+    "@types/node": "20.5.9",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
   }
 }
