@@ -27,3 +27,7 @@
 .info a &:hover {
   text-decoration: underline;
 }
+
+.list {
+  padding-left: 40px;
+}
