@@ -1,0 +1,25 @@
+{
+  "contacts": [
+    {
+      "title": "Телефон",
+      "info": {
+        "label": "+7 (918) 133-55-00",
+        "value": "tel:+79181335500"
+      }
+    },
+    {
+      "title": "E-mail",
+      "info": {
+        "label": "a.vlasenko@royallaw.ru",
+        "value": "mailto:a.vlasenko@royallaw.ru"
+      }
+    },
+    {
+      "title": "Адрес",
+      "info": {
+        "label": "г. Краснодар, Краснодарский край, РФ",
+        "value": ""
+      }
+    }
+  ]
+}

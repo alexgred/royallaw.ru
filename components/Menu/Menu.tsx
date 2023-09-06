@@ -12,7 +12,7 @@ interface Menu {
 export default function Menu({ links }: { links: Menu[] }) {
   const pathname: string = usePathname();
   
-  const menuLinks = links.map((item: Menu, index: number) => {
+  const menuLinks: React.ReactNode = links.map((item: Menu, index: number) => {
 
     return (
       <li key={index}>

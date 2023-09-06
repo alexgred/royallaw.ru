@@ -6,7 +6,7 @@ interface Social {
 }
 
 export default function Social({ links }: { links: Social[] }) {
-  const list = links.map((item: Social, index: number) => {
+  const list: React.ReactNode = links.map((item: Social, index: number) => {
 
     return (
       <a href={item.link} className={`${styles.icon} ${styles[item.class]}`} key={index}></a>

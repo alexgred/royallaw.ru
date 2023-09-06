@@ -1,0 +1,27 @@
+.block {
+  padding: 40px 0;
+}
+
+.blockTitle {
+  padding-left: 7px;
+  border-left: 3px solid var(--color-title-border);
+  margin: 10px 0 30px;
+}
+
+.blockTitle * {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.list li {
+  padding-left: 40px;
+}
+
+@media (min-width: 1200px) {
+
+  .block {
+    padding: 40px;
+  }
+}
