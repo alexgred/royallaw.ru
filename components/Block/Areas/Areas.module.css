@@ -1,0 +1,44 @@
+.areas {
+  background: var(--block-areas-bg);
+}
+
+
+.item {
+  border-bottom: 1px solid var(--block-areas-border);
+  padding-bottom: 20px;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: var(--block-areas-title);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+
+@media (min-width: 768px) {
+
+  .areas .row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .areas .row {
+    flex-flow: row nowrap;
+  }
+}

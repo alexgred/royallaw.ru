@@ -2,6 +2,7 @@ import styles from './page.module.css';
 import Header from '@/components/Header/Header';
 import About from '@/components/Block/About/About';
 import Contacts from '@/components/Block/Contacts/Contacts';
+import Areas from '@/components/Block/Areas/Areas';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <main>
         <About />
+        <Areas />
         <Contacts />
       </main>
     </>
