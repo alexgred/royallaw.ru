@@ -1,0 +1,12 @@
+.footer {
+  background: #cccccc;
+  padding: 20px 0 10px;
+}
+
+.footerBottom {
+  padding: 20px 0;
+}
+
+.developer a {
+  font-weight: 500;
+}

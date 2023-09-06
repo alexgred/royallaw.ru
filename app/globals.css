@@ -1,3 +1,5 @@
+@import url('../assets/bootstrap/css/bootstrap.css');
+
 :root {
   --font-primary: 'Open Sans',
     sans-serif;
@@ -67,3 +69,17 @@ a {
 a:hover {
   color: var(--link-color-hover);
 }
+
+
+/* .sc-hidden {
+  opacity: 0;
+}
+
+.sc-visible {
+  opacity: 1;
+}
+
+.animated {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+} */

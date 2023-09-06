@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "class": "iconVk",
+      "link": "https://vk.com/"
+    },
+    {
+      "class": "iconInst",
+      "link": "https://instagram.com/"
+    },
+    {
+      "class": "iconFb",
+      "link": "https://facebook.com/"
+    }
+  ]
+}

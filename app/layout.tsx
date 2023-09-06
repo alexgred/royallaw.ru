@@ -1,11 +1,16 @@
-import './bootstrap/css/bootstrap.min.css';
-import './globals.css';
+import '@/app/globals.css';
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
 import Navigation from '@/components/Navigation/Navigation';
+import Footer from '@/components/Footer/Footer';
+import localFont from 'next/font/local';
 
+const fontAwesome = localFont({
+  src: '../assets/fonts/fontawesome-webfont.woff2',
+  display: 'swap',
+  variable: '--font-icon',
+});
 
-//👇 Configure our font object
 const openSans = Open_Sans({
   subsets: ['latin', 'cyrillic'],
   display: 'swap',
@@ -23,9 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={`front-page ${openSans.className}`}>
+      <body className={`${fontAwesome.variable} ${openSans.className}`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

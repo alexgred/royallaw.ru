@@ -1,0 +1,49 @@
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  position: relative;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.icon:before {
+  content: '';
+  display: block;
+  font-family: var(--font-icon);
+  font-size: 18px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  line-height: var(--icon-size);
+  color: var(--icon-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: var(--icon-bg);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.icon:hover:before {
+  background: var(--icon-bg-hover);
+  color: var(--icon-color-hover);
+}
+
+.iconFb:before {
+  content: '\f09a';
+}
+
+.iconInst:before {
+  content: '\f16d';
+}
+
+.iconVk:before {
+  content: '\f189';
+}
+
+@media (min-width: 768px) {
+
+  .icon {
+    margin-right: 5px;
+  }
+}
