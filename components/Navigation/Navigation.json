@@ -9,7 +9,7 @@
       "label": "Прайс-лист"
     },
     {
-      "link": "#block-contacts",
+      "link": "/#block-contacts",
       "label": "Контакты"
     }
   ]

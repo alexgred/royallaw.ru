@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Menu from '../Menu/Menu';
 import styles from './Navigation.module.css';
 import image from '@/assets/images/logo.png';
-import { links } from './Navigation.json';
+import json from './Navigation.json';
 
 export default function Navigation() {
 
@@ -27,7 +27,7 @@ export default function Navigation() {
             <h1 className={styles.title}>Royal Law</h1>
           </div>
         </div>
-        <Menu links={links} />
+        <Menu links={json.links} />
       </div>
     </nav>
   );
