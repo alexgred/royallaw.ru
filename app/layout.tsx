@@ -1,7 +1,9 @@
-import './globals.css';
 import './bootstrap/css/bootstrap.min.css';
+import './globals.css';
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
+import Navigation from '@/components/Navigation/Navigation';
+
 
 //👇 Configure our font object
 const openSans = Open_Sans({
@@ -21,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={`front-page ${openSans.className}`}>{children}</body>
+      <body className={`front-page ${openSans.className}`}>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,0 +1,33 @@
+.nav {
+  height: var(--navbar-height);
+  padding: 0;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav .link {
+  font-weight: 100;
+  padding: 0 15px;
+  line-height: var(--navbar-height);
+  height: var(--navbar-height);
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.nav .link.active {
+  border-bottom: 3px solid var(--color-secondary);
+}
+
+.mainMenu {
+  float: right;
+}
+
+@media (min-width: 768px) {
+
+  .link {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "link": "/",
+      "label": "Главная"
+    },
+    {
+      "link": "/price",
+      "label": "Прайс-лист"
+    },
+    {
+      "link": "#block-contacts",
+      "label": "Контакты"
+    }
+  ]
+}
