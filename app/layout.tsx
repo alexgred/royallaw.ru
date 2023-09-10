@@ -4,6 +4,7 @@ import { Open_Sans } from 'next/font/google';
 import Navigation from '@/components/Navigation/Navigation';
 import Footer from '@/components/Footer/Footer';
 import localFont from 'next/font/local';
+import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 
 const fontAwesome = localFont({
   src: '../assets/fonts/fontawesome-webfont.woff2',
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${fontAwesome.variable} ${openSans.className}`}>
         <Navigation />
         {children}
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
